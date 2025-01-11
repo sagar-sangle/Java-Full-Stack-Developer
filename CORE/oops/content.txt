@@ -1,10 +1,19 @@
 Class
+Object
+Encapsulation
+Abstraction
 Inheritance
 Polymorphism
-Abstraction
-Encapsulation
-Association
+Message Passing
+Method Overloading
+Method Overriding
+Constructor
+Destructor (Not directly in Java)
+Interfaces
+Abstract Classes
+Static Binding and Dynamic Binding
 Aggregation
 Composition
-Java OOPs Concepts
-Using OOP concepts to write high-performance Java code
+Association
+CoHesion
+Coupling

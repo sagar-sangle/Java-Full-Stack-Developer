@@ -16,6 +16,8 @@ public class FinalArray {
     public static void main(String[] args) {
         
         final int a;
+
+        
         a=10;//can be initlized once only 
         System.out.println(a);
 

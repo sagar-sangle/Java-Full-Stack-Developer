@@ -27,6 +27,8 @@ public class Test {
         Field f[] = c1.getDeclaredFields();
         for (Field field : f)
             System.out.println(field.getName());
+
+            
     }
 }
 
