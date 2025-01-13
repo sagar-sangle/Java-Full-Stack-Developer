@@ -1,9 +1,10 @@
 /*The List interface represents an ordered collection that allows duplicates. 
-  It is implemented by classes like ArrayList, LinkedList, and Vector. Lists allow elements to be accessed by their index position. \
+  It is implemented by classes like ArrayList, LinkedList, and Vector.
+   Lists allow elements to be accessed by their index position. 
   
-  Declartation : public interface List<E> extends Collection<E>
+Declartation : public interface List<E> extends Collection<E>
 
-  The List Interface in Java extends the Collection Interface and is a part of java.util package. It is used to store the ordered collections of elements. So in a Java List, you can organize and manage the data sequentially.
+The List Interface in Java extends the Collection Interface and is a part of java.util package. It is used to store the ordered collections of elements. So in a Java List, you can organize and manage the data sequentially.
 
 Maintained the order of elements in which they are added.
 Allows the duplicate elements.

@@ -16,9 +16,10 @@ import java.util.*;
 public class TreeSet_Demo {
     public static void main(String[] args) {
 
-        TreeSet ts = new TreeSet();
+        TreeSet<Integer> ts = new TreeSet<>();
 
         // follows sorting but not insertion
+        //can store homogenious data only
         ts.add(10);
         ts.add(40);
         ts.add(30);

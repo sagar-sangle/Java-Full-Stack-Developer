@@ -7,7 +7,9 @@ The primary purpose of a queue is to handle elements in a First-In-First-Out (FI
 No Null Elements: Most implementations like PriorityQueue do not allow null elements.
 Implementation Classes: LinkedList , PriorityQueue, ArrayDeque, ConcurrentLinkedQueue (for thread-safe operations).
 Use Cases: Commonly used for Task scheduling, Message passing, and Buffer management in applications.
-Iteration: Supports iterating through elements. The order of iteration depends on the implementation.*/
+Iteration: Supports iterating through elements. The order of iteration depends on the implementation.
+
+*/
 package CORE.collection.queue;
 
 import java.util.LinkedList;
@@ -18,22 +20,27 @@ public class QueueExample {
         // Create a Queue using LinkedList
         Queue<String> queue = new LinkedList<>();
 
+
         // Adding elements to the Queue
         queue.add("Apple");
         queue.add("Banana");
         queue.add("Cherry");
         queue.offer("Date"); // Using offer method
+  
 
         // Displaying the Queue
         System.out.println("Queue: " + queue);
 
+
         // Checking the size
         System.out.println("Size of Queue: " + queue.size());
+
 
         // Removing elements
         String removed = queue.remove(); // Removes "Apple"
         System.out.println("Removed element: " + removed);
         System.out.println("Queue after removal: " + queue);
+        
 
         // Peeking at the head of the queue
         String head = queue.peek(); // Retrieves "Banana"

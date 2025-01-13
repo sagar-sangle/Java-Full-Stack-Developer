@@ -1,4 +1,7 @@
-/*The Set Interface is present in java.util package and extends the Collection interface. It is an unordered collection of objects in which duplicate values cannot be stored. It is an interface that implements the mathematical set. This interface adds a feature that restricts the insertion of the duplicate elements.
+/*The Set Interface is present in java.util package and extends the Collection interface.
+ It is an unordered collection of objects in which duplicate values cannot be stored.
+  It is an interface that implements the mathematical set. 
+  This interface adds a feature that restricts the insertion of the duplicate elements.
 
 No Specific Order: Does not maintain any specific order of elements (Exceptions: LinkedHashSet and TreeSet).
 Allows One Null Element: Most Set implementations allow a single null element.
