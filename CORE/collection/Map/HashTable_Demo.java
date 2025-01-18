@@ -6,6 +6,7 @@ It is implemented using a hashing mechanism, where a hash function computes an i
  2)does not allow null key or values
  hashtable retirved values top to bottom 
  3)this is thread safe 
+ it uses linked list only even if collision occrus 
 
  It is similar to HashMap, but is synchronized.
 Hashtable stores key/value pair in hash table.
@@ -15,8 +16,49 @@ HashMap doesn’t provide any Enumeration, while Hashtable provides not fail-fas
 
  
  */
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 public class HashTable_Demo {
     public static void main(String[] args) {
+
+
+        // Map<Integer,String> emp = new HashMap<>();
+        //in case of hashmap outpul will be inconsistant
+        Map<Integer,String> emp = new ConcurrentHashMap<>();
+
+
+        Runnable r1 = ()->{
+
+            for (int i = 0; i < 100; i++) {
+                emp.put(i, "thread 1");
+            }
+            
+        };
+
+        Runnable r2 = ()->{
+
+            for (int i = 100; i < 200; i++) {
+                emp.put(i, "thread 2");
+            }
+            
+        };
+
+        Thread t1 = new Thread(r1);
+        Thread t2 = new Thread(r2);
+
+       t1.start();
+       t2.start();
+
+       try {
+           t2.join();
+           t1.join();
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+
+        System.out.println("size of map is :"+emp.size());
+
+
         
     }
 }

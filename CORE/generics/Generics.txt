@@ -1,0 +1,11 @@
+what is Generics ? 
+-> Generics means parametrized Type genrics was defined in java 5 generics are used when we want to pass Parametrs 
+to classes and interfaces and methods to provide comiple type safty and prevent type casting 
+
+issue without genrics :
+1)  TypeCasting 
+2)Manual Checking 
+3)No compile time Checking
+
+with using generics u can avoid all these.
+
